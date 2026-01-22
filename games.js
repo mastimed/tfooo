@@ -5,7 +5,7 @@ const games = [
     { 
         id: 'sprunki-retake',
         name: 'Sprunki Retake Game', 
-        imageUrl: 'https://sprunki2.io/cache/data/image/game/sprunki-retake-f180x180.webp', 
+        imageUrl: 'https://cdn-images.dzcdn.net/images/cover/1964fd674c0cc718a7227ae5257b9b12/500x500-000000-80-0-0.jpg', 
         iframeUrl: 'https://sprunki2.io/sprunki-retake.embed',
         description: 'Sprunki Retake is an exciting remake of the Sprunki music game. You will be composing songs with creepy melodies and haunting sounds with unique new characters',
         about: 'Crossy Road is an addictive arcade game with a simple goal: cross an endless series of roads, rivers, and train tracks without getting hit. Collect coins to unlock dozens of fun and quirky characters.',
