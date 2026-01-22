@@ -1,4 +1,4 @@
-// This file is the central database for all games on TFOOO.
+// This file is the central database for all games on kidgas.
 
 // List of all games with their complete information.
 const games = [
@@ -17,7 +17,7 @@ const games = [
         name: 'Crossy Road', 
         imageUrl: 'https://evanclub.github.io/images/crossyroad.png', 
         iframeUrl: 'https://sciencemathedu.github.io/crossyroad/',
-        description: 'Why did the chicken cross the road? Find out in this endless arcade hopper. Play Crossy Road for free online at TFOOO!',
+        description: 'Why did the chicken cross the road? Find out in this endless arcade hopper. Play Crossy Road for free online at kidgas!',
         about: 'Crossy Road is an addictive arcade game with a simple goal: cross an endless series of roads, rivers, and train tracks without getting hit. Collect coins to unlock dozens of fun and quirky characters.',
         controls: 'Use the Arrow Keys on your keyboard (Up, Down, Left, Right) to move. On mobile, simply swipe in the direction you want to go.',
         keywords: 'arcade, endless runner, hopper, pixel game, funny game'
@@ -27,7 +27,7 @@ const games = [
         name: 'BitLife', 
         imageUrl: 'https://evanclub.github.io/images/bitlife.png', 
         iframeUrl: 'https://sciencemathedu.github.io/bitlife/', 
-        description: 'Live your best (or worst) life in BitLife, the ultimate life simulator. Make choices and see where they take you. Play for free on TFOOO.',
+        description: 'Live your best (or worst) life in BitLife, the ultimate life simulator. Make choices and see where they take you. Play for free on kidgas.',
         about: 'BitLife is a text-based life simulation game where you control a virtual person\'s life from birth to death. Will you become a model citizen, a rockstar, or a criminal? The choices are yours!',
         controls: 'This game is played using your mouse or by tapping on the screen to make choices and advance through the story.',
         keywords: 'life simulator, text-based, simulation game, choices matter'
