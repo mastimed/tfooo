@@ -12,16 +12,7 @@ const games = [
         controls: 'The game includes characters and emoticons. You drag the icons to the characters to combine them to create a new character. Each character contributes a unique spooky sound to your music. The game allows you to freely experiment with many combinations to create the perfect music.',
         keywords: 'arcade, Sprunki runner, hopper, Retake game, funny game'
     },
-    { 
-        id: 'crossy-road',
-        name: 'Crossy Road', 
-        imageUrl: 'https://evanclub.github.io/images/crossyroad.png', 
-        iframeUrl: 'https://sciencemathedu.github.io/crossyroad/',
-        description: 'Why did the chicken cross the road? Find out in this endless arcade hopper. Play Crossy Road for free online at kidgas!',
-        about: 'Crossy Road is an addictive arcade game with a simple goal: cross an endless series of roads, rivers, and train tracks without getting hit. Collect coins to unlock dozens of fun and quirky characters.',
-        controls: 'Use the Arrow Keys on your keyboard (Up, Down, Left, Right) to move. On mobile, simply swipe in the direction you want to go.',
-        keywords: 'arcade, endless runner, hopper, pixel game, funny game'
-    },
+
     { 
         id: 'bitlife', 
         name: 'BitLife', 
