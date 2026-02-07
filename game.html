@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading game... - TFOOO</title>
+    <meta name="description" content="Play the best free online games on TFOOO, your destination for fun browser games.">
+    <link rel="canonical" href="https://your-username.github.io/game.html" />
+    <script type="application/ld+json" id="game-schema"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="game-page-body">
+    <header class="site-header">
+        
+    </header>
+
+    <!-- ======== NEW CSS GRID LAYOUT FOR GAME AND ADS ======== -->
+    <div class="game-page-grid-layout">
+        <!-- Top Ad Slot -->
+        <aside class="ad-grid ad-top">
+            <div class="ad-placeholder-horizontal">Ad (728x90)</div>
+        </aside>
+        
+        <!-- Left Ad Slot -->
+        <aside class="ad-grid ad-left">
+            <div class="ad-placeholder-vertical">Ad (160x600)</div>
+        </aside>
+
+        <!-- Main Game Container (Center of the Grid) -->
+        <main class="game-container-grid" id="game-viewport">
+            <!-- The iframe will be inserted here by JavaScript -->
+        </main>
+
+        <!-- Right Ad Slot -->
+        <aside class="ad-grid ad-right">
+            <div class="ad-placeholder-vertical">Ad (160x600)</div>
+        </aside>
+
+        <!-- Bottom Ad Slot -->
+        <aside class="ad-grid ad-bottom">
+            <div class="ad-placeholder-horizontal">Ad (728x90)</div>
+        </aside>
+    </div>
+    <!-- ====================================================== -->
+
+    <!-- Game information and other content now sits below the grid -->
+    <div class="game-content-container">
+        <div class="game-info">
+            <h2 id="game-title">Loading...</h2>
+            <button class="fullscreen-button">Fullscreen</button>
+        </div>
+        
+        <section class="game-details" id="game-details">
+            <h3>About This Game</h3>
+            <p id="game-about"></p>
+            <h3>How to Play</h3>
+            <p id="game-controls"></p>
+        </section>
+
+        <section class="other-games-section" id="other-games">
+            <h3>You might also like:</h3>
+            <div class="other-games-grid" id="other-games-grid"></div>
+        </section>
+    </div>
+
+    <!-- Your scripts remain the same -->
+    <script src="games.js" defer></script>
+    <script src="game-loader.js" defer></script>
+</body>
+</html>
