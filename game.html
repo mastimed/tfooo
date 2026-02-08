@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redirecting…</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://kidgas.com/">
+<script>
+(function(){
+  const params = new URLSearchParams(location.search);
+  const id = (params.get('id')||'').trim();
+  if(id){
+    location.replace('/games/' + encodeURIComponent(id) + '.html');
+  }else{
+    location.replace('/');
+  }
+})();
+</script>
+<script defer src="/app.js"></script>
+<script src="/ads.js" defer></script>
+</head>
+<body>
+<p>Redirecting…</p>
+</body>
+</html>
