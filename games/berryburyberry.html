@@ -29,110 +29,113 @@
 <script defer src="/app.js"></script>
 <script defer src="/ads.js"></script>
 
-
- 
-
-  <!-- JSON-LD: VideoGame -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"VideoGame",
-    "name":"BerryBuryBerry",
-    "url":"https://kidgas.com/games/berryburyberry.html",
-    "image":"https://kidgas.com/images/berryburyberry.png",
-    "description":"Play BerryBuryBerry online for free on Kidgas. Instant browser gameplay with tips, controls, and similar games.",
-    "genre":["Arcade","Puzzle"],
-    "gamePlatform":["Web Browser","Desktop","Mobile"],
-    "operatingSystem":["Windows","macOS","Android","iOS"],
-    "publisher":{"@type":"Organization","name":"Kidgas"},
-    "inLanguage":"en"
-  }
-  </script>
-
-  <!-- JSON-LD: Breadcrumbs -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://kidgas.com/"},
-      {"@type":"ListItem","position":2,"name":"Games","item":"https://kidgas.com/games/"},
-      {"@type":"ListItem","position":3,"name":"BerryBuryBerry","item":"https://kidgas.com/games/berryburyberry.html"}
-    ]
-  }
-  </script>
 </head>
-
 <body>
-  <!-- Header (keep your existing site header if different) -->
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="/" aria-label="Kidgas home">
-        <span class="brand-mark">🔥</span><span class="brand-name">Kidgas</span>
-      </a>
-
-      <form class="searchbar" action="/search.html" method="GET">
-        <input name="q" type="search" placeholder="Search among games…" aria-label="Search games" />
-        <button type="submit">Search</button>
-      </form>
-
-      <nav class="topbar-actions">
-        <a class="btn-ghost" href="/login.html">Login</a>
-        <a class="btn-primary" href="/signup.html">Sign up</a>
+<header class="site-header">
+  <div class="topbar container">
+    <button type="button" class="icon-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span class="icon">☰</span></button>
+    <a class="brand" href="/"><img class="brand-logo" src="/assets/brand/kidgas-logo.svg" alt="Kidgas"/><span>Kidgas</span></a>
+    <form class="search" action="/search.html" role="search" autocomplete="off">
+      <input id="siteSearch" name="q" type="search" placeholder="Search among 100,000 games" aria-label="Search games"/>
+      <button type="submit">Search</button>
+    </form>
+    <div class="auth">
+      <a class="auth-link" href="/contact.html" rel="nofollow">Login</a>
+      <a class="btn primary" href="/contact.html" rel="nofollow">Sign up</a>
+    </div>
+  </div>
+  <div class="subbar">
+    <div class="container">
+      <nav class="chips" id="chipsNav" aria-label="Browse categories">
+        <a class="chip" href="/top.html">Top</a>
+        <a class="chip" href="/trending.html">Trending</a>
+        <a class="chip" href="/new.html">New</a>
+        <span class="chip-sep" aria-hidden="true"></span>
+        <a class="chip" href="/category/action.html">Action</a>
+        <a class="chip" href="/category/puzzle.html">Puzzle</a>
+        <a class="chip" href="/category/arcade.html">Arcade</a>
+        <a class="chip" href="/category/multiplayer.html">Multiplayer</a>
+        <a class="chip" href="/category/racing.html">Racing</a>
+        <a class="chip" href="/category/sports.html">Sports</a>
+        <a class="chip" href="/category/horror.html">Horror</a>
+        <a class="chip" href="/category/music.html">Music</a>
+        <a class="chip" href="/category/platformer.html">Platformer</a>
+        <a class="chip" href="/about.html">About</a>
       </nav>
     </div>
+  </div>
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="drawer-head">
+        <strong>Menu</strong>
+        <button type="button" class="icon-btn" id="drawerClose" aria-label="Close menu">✕</button>
+      </div>
+      <div class="drawer-body">
+        <a href="/top.html">Top</a>
+        <a href="/trending.html">Trending</a>
+        <a href="/new.html">New</a>
+        <hr/>
+        <a href="/category/action.html">Action</a>
+        <a href="/category/puzzle.html">Puzzle</a>
+        <a href="/category/arcade.html">Arcade</a>
+        <a href="/category/multiplayer.html">Multiplayer</a>
+        <a href="/category/racing.html">Racing</a>
+        <a href="/category/sports.html">Sports</a>
+        <a href="/category/horror.html">Horror</a>
+        <a href="/category/music.html">Music</a>
+        <a href="/category/platformer.html">Platformer</a>
+        <hr/>
+        <a href="/about.html">About</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <nav class="chips chips-scroll" aria-label="Categories">
-      <a class="chip" href="/top.html">Top</a>
-      <a class="chip" href="/trending.html">Trending</a>
-      <a class="chip" href="/new.html">New</a>
-      <a class="chip" href="/category/action.html">Action</a>
-      <a class="chip" href="/category/puzzle.html">Puzzle</a>
-      <a class="chip" href="/category/arcade.html">Arcade</a>
-      <a class="chip" href="/category/multiplayer.html">Multiplayer</a>
-      <a class="chip" href="/games/">All games</a>
-    </nav>
-  </header>
+<div class="container" style="margin-top:14px">
+  <div class="ad-slot leaderboard">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-box">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXX" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</div>
 
-  <main class="page">
-    <div class="container">
+<main class="container">
+  <nav class="breadcrumbs"><a href="/">Home</a> / <a href="/category/action.html">Action Games</a> / Big Red Button</nav>
 
-      <!-- Title -->
-      <header class="game-header">
-        <h1>BerryBuryBerry</h1>
-        <p class="subtitle">
-          Play free online in your browser — no download required.
-        </p>
-      </header>
+  <section class="hero">
+    <p class="kicker">Free Browser Game</p>
+    <h1>Berry Bury Berry<</h1>
+    <p class="hero-sub">Play Berry Bury Berry online for free on Kidgas. No download—instant browser play with tips, controls, and similar games.</p>
+  </section>
 
-      <!-- Player (FULL PAGE, no sidebar) -->
-      <section class="player-wrap" aria-label="Game player">
-        <div class="player-toolbar">
-          <button class="btn-ghost" id="btnFit" type="button">Fit</button>
-          <button class="btn-ghost" id="btnFill" type="button">Fill</button>
-          <button class="btn-primary" id="btnFullscreen" type="button">Fullscreen</button>
+  <div class="columns no-sidebar">
+    <section>
+      <div class="play-frame" id="gamePlayer">
+        <div class="play-tools">
+          <div class="btn-group" role="group" aria-label="Player size">
+            <button type="button" class="btn btn-small" data-action="fit" title="Fit to screen">Fit</button>
+            <button type="button" class="btn btn-small" data-action="fill" title="Fill available space">Fill</button>
+          </div>
+          <button type="button" class="btn btn-primary" data-action="fullscreen" title="Fullscreen">Fullscreen</button>
         </div>
+        <iframe src="https://sciencemathedu.github.io/bigredbutton/" loading="lazy" allowfullscreen title="Big Red Button"></iframe>
+      </div>
 
-        <!-- TODO: replace iframe src -->
-        <div class="player" id="player">
-          <iframe
-            id="gameFrame"
-            title="BerryBuryBerry game"
-            src="TODO_IFRAME_URL_HERE"
-            loading="lazy"
-            allow="autoplay; fullscreen; gamepad *; clipboard-read; clipboard-write"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      <div class="ad-slot in-article">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-box">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXX" data-ad-slot="0000000001" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
+      </div>
 
-        <p class="player-note">
-          Tip: If the game doesn’t load, refresh the page or try another browser.
-        </p>
-      </section>
-
-      <!-- SEO++ Article -->
-      <article class="content">
+      <section class="content">
+  <h2>About Berry Bury Berry</h2>
+   <article class="content">
         <h2>About BerryBuryBerry</h2>
         <p>
           <strong>BerryBuryBerry</strong> is a fast, satisfying browser game where quick decisions and clean timing matter.
@@ -213,65 +216,56 @@
         <h3>Can I play fullscreen?</h3>
         <p>Yes—use the <strong>Fullscreen</strong> button above the game.</p>
       </article>
+
+       
+</section>
+
+      <section class="content">
+        <h2>Similar games</h2>
+        <div class="chips chips-wrap">
+          <a class="chip" href="/games/thorn-and-balloons.html">Thorn and Balloons</a>
+<a class="chip" href="/games/learn-to-fly.html">Learn to Fly</a>
+<a class="chip" href="/games/learn-to-fly-3.html">Learn to Fly 3</a>
+<a class="chip" href="/games/chrome-dino.html">Chrome Dino</a>
+<a class="chip" href="/games/hextris.html">Hextris</a>
+<a class="chip" href="/games/geometry-dash.html">Geometry Dash</a>
+<a class="chip" href="/games/problempal-support.html">ProblemPal Support</a>
+<a class="chip" href="/games/shuttle-deck.html">Shuttle Deck</a>
+<a class="chip" href="/games/duck-life-3.html">Duck Life 3</a>
+<a class="chip" href="/games/clear-ai-support.html">Clear AI Support</a>
+<a class="chip" href="/games/minecraft.html">Minecraft</a>
+<a class="chip" href="/games/learn-to-fly-2.html">Learn to Fly 2</a>
+        </div>
+      </section>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><img src="/assets/brand/kidgas-logo.svg" alt="Kidgas"/><strong>Kidgas</strong></div>
+      <p>Play free browser games instantly. New games, trending picks, and hand-picked classics.</p>
     </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-cols">
-      <div>
-        <div class="footer-brand">🔥 Kidgas</div>
-        <p class="muted">Play free browser games instantly. New games, trending picks, and hand-picked classics.</p>
-      </div>
-
-      <div>
-        <h4>Browse</h4>
-        <a href="/top.html">Top</a>
-        <a href="/trending.html">Trending</a>
-        <a href="/new.html">New</a>
-        <a href="/games/">All games</a>
-      </div>
-
-      <div>
-        <h4>Company</h4>
-        <a href="/about.html">About</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/faq.html">FAQ</a>
-        <a href="/contact.html">Contact</a>
-      </div>
+    <div>
+      <h4>Browse</h4>
+      <a href="/top.html">Top</a><br/>
+      <a href="/trending.html">Trending</a><br/>
+      <a href="/new.html">New</a><br/>
+      <a href="/category/action.html">Action</a><br/>
+      <a href="/category/puzzle.html">Puzzle</a>
     </div>
-  </footer>
+    <div>
+      <h4>Company</h4>
+      <a href="/about.html">About</a><br/>
+      <a href="/privacy.html">Privacy</a><br/>
+      <a href="/faq.html">FAQ</a><br/>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="container footnote">© 2026 Kidgas</div>
+</footer>
 
-  <script>
-  // Fit / Fill / Fullscreen controls
-  const player = document.getElementById('player');
-  const frame = document.getElementById('gameFrame');
-  const btnFit = document.getElementById('btnFit');
-  const btnFill = document.getElementById('btnFill');
-  const btnFs = document.getElementById('btnFullscreen');
-
-  function setFit(){
-    player.classList.remove('fill');
-    player.classList.add('fit');
-    localStorage.setItem('kidgas_player_mode','fit');
-  }
-  function setFill(){
-    player.classList.remove('fit');
-    player.classList.add('fill');
-    localStorage.setItem('kidgas_player_mode','fill');
-  }
-
-  btnFit.addEventListener('click', setFit);
-  btnFill.addEventListener('click', setFill);
-
-  btnFs.addEventListener('click', () => {
-    const el = player;
-    if (el.requestFullscreen) el.requestFullscreen();
-    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
-  });
-
-  // restore
-  const saved = localStorage.getItem('kidgas_player_mode');
-  if (saved === 'fit') setFit(); else setFill();
-  </script>
+<script defer src="/player-ui.js"></script>
 </body>
 </html>
